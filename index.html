@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Análise profunda de investimentos para renda passiva - Carteira de R$ 1 milhão com projeções 2026-2028">
+    <title>Análise de Investimentos - Planejamento Financeiro 2026-2028</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>💰 Análise de Investimentos</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#resumo">Resumo</a></li>
+                    <li><a href="#carteira">Carteira</a></li>
+                    <li><a href="#projecoes">Projeções</a></li>
+                    <li><a href="#reinvestimento">Reinvestimento</a></li>
+                    <li><a href="#impostos">Impostos</a></li>
+                    <li><a href="#imovel">Imóvel vs Investir</a></li>
+                    <li><a href="#recomendacoes">Recomendações</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Planejamento Financeiro Completo</h1>
+                <p class="hero-subtitle">Análise profissional de investimentos para geração de renda passiva de R$ 7.000 a R$ 10.000 mensais</p>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">R$ 1.000.000</div>
+                        <div class="stat-label">Capital Disponível</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">R$ 8.108</div>
+                        <div class="stat-label">Renda Mensal Projetada</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">9,73%</div>
+                        <div class="stat-label">Rentabilidade Anual</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">3 Anos</div>
+                        <div class="stat-label">Horizonte de Projeção</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resumo Executivo -->
+    <section id="resumo" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">📊 Resumo Executivo</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>✅ Objetivo Viável</h3>
+                    <p class="card-text">Meta de R$ 7.000 a R$ 10.000/mês é totalmente alcançável com R$ 1 milhão investido em carteira diversificada.</p>
+                </div>
+                <div class="card">
+                    <h3>📈 Projeção Realista</h3>
+                    <p class="card-text">Cenário conservador baseado no Boletim Focus do Banco Central com Selic em 12,25% (2026) caindo para 10% (2028).</p>
+                </div>
+                <div class="card">
+                    <h3>🎯 Estratégia Otimizada</h3>
+                    <p class="card-text">Carteira com alíquota efetiva de apenas 11,28% de IR graças à diversificação inteligente com 25% em ativos isentos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carteira Recomendada -->
+    <section id="carteira" class="section">
+        <div class="container">
+            <h2 class="section-title">💼 Carteira Recomendada - R$ 1 Milhão</h2>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Alocação por Ativo</h3>
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/0816d1a95442e9247904804f250ad6df/0b0bf378-562a-4cf1-bbed-ef69287fcd87/a8aff52c.png" alt="Alocação de Carteira" class="chart-img">
+                </div>
+                
+                <div class="card">
+                    <h3>Composição Detalhada</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Ativo</th>
+                                <th>Alocação</th>
+                                <th>Valor</th>
+                                <th>IR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tesouro IPCA+</td>
+                                <td><strong>25%</strong></td>
+                                <td><strong>R$ 250.000</strong></td>
+                                <td>17,5%</td>
+                            </tr>
+                            <tr>
+                                <td>CDB 100% CDI</td>
+                                <td><strong>25%</strong></td>
+                                <td><strong>R$ 250.000</strong></td>
+                                <td>17,5%</td>
+                            </tr>
+                            <tr>
+                                <td>LCI/LCA 90% CDI</td>
+                                <td><strong>20%</strong></td>
+                                <td><strong>R$ 200.000</strong></td>
+                                <td>5,0%</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td>FIIs</td>
+                                <td><strong>15%</strong></td>
+                                <td><strong>R$ 150.000</strong></td>
+                                <td><strong>Isento</strong></td>
+                            </tr>
+                            <tr class="highlight">
+                                <td>Ações Dividendos</td>
+                                <td><strong>10%</strong></td>
+                                <td><strong>R$ 100.000</strong></td>
+                                <td><strong>Isento</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Reserva Emergência</td>
+                                <td><strong>5%</strong></td>
+                                <td><strong>R$ 50.000</strong></td>
+                                <td>17,5%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="info-box success">
+                <strong>💡 Vantagem Tributária:</strong> 25% da carteira está em ativos isentos de IR (FIIs + Ações), reduzindo a alíquota efetiva para apenas 11,28% vs 17,5% nominal.
+            </div>
+        </div>
+    </section>
+
+    <!-- Projeções 2026-2028 -->
+    <section id="projecoes" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">📈 Projeções 2026-2028 (Sem Reinvestimento)</h2>
+            
+            <div class="card">
+                <h3>Evolução da Renda Mensal por Cenário</h3>
+                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/325f470a0d800dbbb9503aa67770ff69/73173c59-183f-4473-afbc-b4abdf227e7c/2c5673b4.png" alt="Projeção Renda Mensal 2026-2028" class="chart-img">
+                <p class="chart-description">Este gráfico mostra a evolução da renda mensal líquida considerando resgate de 100% dos rendimentos (sem reinvestimento).</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card card-blue">
+                    <h3>🔵 Cenário Realista</h3>
+                    <div class="scenario-data">
+                        <p class="scenario-value"><strong>2026:</strong> R$ 8.108/mês</p>
+                        <p class="scenario-value"><strong>2027:</strong> R$ 7.433/mês</p>
+                        <p class="scenario-value"><strong>2028:</strong> R$ 7.285/mês</p>
+                        <hr>
+                        <p class="scenario-detail">Selic: 12,25% → 10,00%</p>
+                        <p class="scenario-detail">IPCA: 4,27% → 3,60%</p>
+                    </div>
+                </div>
+
+                <div class="card card-green">
+                    <h3>🟢 Cenário Otimista</h3>
+                    <div class="scenario-data">
+                        <p class="scenario-value"><strong>2026:</strong> R$ 7.884/mês</p>
+                        <p class="scenario-value"><strong>2027:</strong> R$ 7.232/mês</p>
+                        <p class="scenario-value"><strong>2028:</strong> R$ 7.177/mês</p>
+                        <hr>
+                        <p class="scenario-detail">Selic: 11,00% → 8,50%</p>
+                        <p class="scenario-detail">IPCA: 3,80% → 3,20%</p>
+                    </div>
+                </div>
+
+                <div class="card card-orange">
+                    <h3>🟠 Cenário Pessimista</h3>
+                    <div class="scenario-data">
+                        <p class="scenario-value"><strong>2026:</strong> R$ 8.517/mês</p>
+                        <p class="scenario-value"><strong>2027:</strong> R$ 7.954/mês</p>
+                        <p class="scenario-value"><strong>2028:</strong> R$ 7.776/mês</p>
+                        <hr>
+                        <p class="scenario-detail">Selic: 14,00% → 12,00%</p>
+                        <p class="scenario-detail">IPCA: 4,80% → 4,20%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box info">
+                <strong>ℹ️ Importante:</strong> Estas projeções consideram 100% de resgate da renda (sem reinvestimento). Veja a próxima seção para análise com reinvestimento.
+            </div>
+        </div>
+    </section>
+
+    <!-- Estratégias de Reinvestimento -->
+    <section id="reinvestimento" class="section">
+        <div class="container">
+            <h2 class="section-title">💹 Estratégias de Reinvestimento</h2>
+            
+            <div class="card">
+                <h3>Comparação: Sem Reinvestimento vs Reinvestimento 15% vs Reinvestimento 20%</h3>
+                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/325f470a0d800dbbb9503aa67770ff69/73173c59-183f-4473-afbc-b4abdf227e7c/2c5673b4.png" alt="Comparação Estratégias de Reinvestimento" class="chart-img">
+                <p class="chart-description">Este gráfico compara a evolução da renda mensal com diferentes percentuais de reinvestimento dos rendimentos.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card reinvest-card">
+                    <div class="reinvest-badge">0% Reinvestimento</div>
+                    <h3>Sem Reinvestimento</h3>
+                    <div class="reinvest-data">
+                        <div class="reinvest-item">
+                            <span class="reinvest-label">Renda Mensal 2026:</span>
+                            <span class="reinvest-value">R$ 8.108</span>
+                        </div>
+                        <div class="reinvest-item">
+                            <span class="reinvest-label">Renda Mensal 2028:</span>
+                            <span class="reinvest-value">R$ 7.285</span>
+                        </div>
+                        <div class="reinvest-item">
+                            <span class="reinvest-label">Capital Final 2028:</span>
+                            <span class="reinvest-value">R$ 1.000.000</span>
+                        </div>
+                        <div class="reinvest-item">
+                            <span class="reinvest-label">Total Resgatado:</span>
+                            <span class="reinvest-value">R$ 273.911</span>
+                        </div>
+                    </div>
+                    <p class="reinvest-note">✅ Maximiza renda mensal imediata</p>
+                </div>
+
+                <div class="card reinvest-card">
+                    <div class="reinvest-badge reinvest-badge-15">15% Reinvestimento</div>
+                    <h3>Reinvestir 15%</h3>
+                    <div class="reinvest-data">
+                        <div class="reinvest-item">
+                            <span class="reinvest-label">Renda Mensal 2026:</span>
+                            <span class="reinvest-value">R$ 6.892</span>
+                        </div>
+                        <div class="reinvest-item">
+                            <span class="reinvest-label">Renda Mensal 2028:</span>
+                            <span class="reinvest-value">R$ 6.367</span>
+                        </div>
+                        <div class="reinvest-item">
+                            <span class="reinvest-label">Capital Final 2028:</span>
+                            <span class="reinvest-value">R$ 1.041.651</span>
+                        </div>
+                        <div class="reinvest-item">
+                            <span class="reinvest-label">Total Resgatado:</span>
+                            <span class="reinvest-value">R$ 236.024</span>
+                        </div>
+                    </div>
+                    <p class="reinvest-note">⚖️ Equilibra renda e crescimento</p>
+                </div>
+
+                <div class="card reinvest-card">
+                    <div class="reinvest-badge reinvest-badge-20">20% Reinvestimento</div>
+                    <h3>Reinvestir 20%</h3>
+                    <div class="reinvest-data">
+                        <div class="reinvest-item">
+                            <span class="reinvest-label">Renda Mensal 2026:</span>
+                            <span class="reinvest-value">R$ 6.487</span>
+                        </div>
+                        <div class="reinvest-item">
+                            <span class="reinvest-label">Renda Mensal 2028:</span>
+                            <span class="reinvest-value">R$ 6.047</span>
+                        </div>
+                        <div class="reinvest-item">
+                            <span class="reinvest-label">Capital Final 2028:</span>
+                            <span class="reinvest-value">R$ 1.055.787</span>
+                        </div>
+                        <div class="reinvest-item">
+                            <span class="reinvest-label">Total Resgatado:</span>
+                            <span class="reinvest-value">R$ 223.150</span>
+                        </div>
+                    </div>
+                    <p class="reinvest-note">📈 Maximiza crescimento patrimonial</p>
+                </div>
+            </div>
+
+            <div class="info-box warning">
+                <strong>⚠️ Atenção:</strong> Com reinvestimento de 15% ou 20%, a renda mensal fica abaixo da meta de R$ 7.000. Só considere se priorizar crescimento patrimonial sobre renda imediata.
+            </div>
+        </div>
+    </section>
+
+    <!-- Análise Tributária -->
+    <section id="impostos" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">💸 Análise Tributária Detalhada</h2>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Composição: Renda Líquida vs Impostos</h3>
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/0816d1a95442e9247904804f250ad6df/c09512e5-d73d-477e-9420-cf780e5d069e/a8eaa8a0.png" alt="Renda Líquida vs Impostos" class="chart-img">
+                    <p class="chart-description">Visualização da composição da renda mostrando quanto fica líquido e quanto é retido em impostos por cenário.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Alíquotas Efetivas por Cenário</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Cenário</th>
+                                <th>2026</th>
+                                <th>2027</th>
+                                <th>2028</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Realista</strong></td>
+                                <td><strong>11,28%</strong></td>
+                                <td><strong>10,85%</strong></td>
+                                <td><strong>10,59%</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Otimista</strong></td>
+                                <td><strong>10,93%</strong></td>
+                                <td><strong>10,30%</strong></td>
+                                <td><strong>9,87%</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pessimista</strong></td>
+                                <td><strong>11,64%</strong></td>
+                                <td><strong>11,31%</strong></td>
+                                <td><strong>11,05%</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid-3">
+                <div class="card stat-highlight">
+                    <div class="stat-big">R$ 1.031</div>
+                    <div class="stat-desc">IR Retido Mensal (2026)</div>
+                </div>
+                <div class="card stat-highlight">
+                    <div class="stat-big">11,28%</div>
+                    <div class="stat-desc">Alíquota Efetiva vs 17,5% Nominal</div>
+                </div>
+                <div class="card stat-highlight">
+                    <div class="stat-big">R$ 339</div>
+                    <div class="stat-desc">Economia Mensal com Isentos</div>
+                </div>
+            </div>
+
+            <div class="info-box warning">
+                <strong>⚠️ Mudança em 2026:</strong> LCI/LCA passam de isentos para 5% de IR. FIIs e dividendos de ações continuam 100% isentos.
+            </div>
+        </div>
+    </section>
+
+    <!-- Imóvel vs Investir -->
+    <section id="imovel" class="section">
+        <div class="container">
+            <h2 class="section-title">🏠 Análise: Imóvel Alugado vs Vender e Investir</h2>
+            
+            <div class="card">
+                <h3>Comparação Financeira</h3>
+                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/628df0318710c0de4ae45db313593efe/0b724320-6945-4649-9fb9-7c979ce67c5e/dcde6011.png" alt="Alugar vs Investir" class="chart-img">
+                <p class="chart-description">Comparação direta entre manter o imóvel alugado e vender para investir em carteira diversificada.</p>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <h3>🏠 Manter Alugado</h3>
+                    <div class="comparison-data">
+                        <p class="big-number">R$ 3.412</p>
+                        <p class="label">Renda Mensal Líquida</p>
+                        <hr>
+                        <p class="comparison-detail"><strong>Rentabilidade:</strong> 4,09% a.a.</p>
+                        <p class="comparison-detail"><strong>Retorno Total:</strong> R$ 90.949/ano</p>
+                        <p class="comparison-detail"><strong>IR:</strong> 22,5% sobre aluguel</p>
+                    </div>
+                    <div class="pros-cons">
+                        <h4>✅ Prós (8)</h4>
+                        <ul>
+                            <li>Patrimônio físico tangível</li>
+                            <li>Valorização histórica forte</li>
+                            <li>Uso futuro possível</li>
+                        </ul>
+                        <h4>❌ Contras (10)</h4>
+                        <ul>
+                            <li>Renda muito baixa (-66% da meta)</li>
+                            <li>Rentabilidade fraca (4,09%)</li>
+                            <li>Falta de liquidez</li>
+                            <li>Risco de inadimplência</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="comparison-card winner">
+                    <div class="winner-badge">🏆 RECOMENDADO</div>
+                    <h3>💰 Vender e Investir</h3>
+                    <div class="comparison-data">
+                        <p class="big-number">R$ 8.108</p>
+                        <p class="label">Renda Mensal Líquida</p>
+                        <hr>
+                        <p class="comparison-detail"><strong>Rentabilidade:</strong> 9,73% a.a.</p>
+                        <p class="comparison-detail"><strong>Retorno Total:</strong> R$ 122.302/ano</p>
+                        <p class="comparison-detail"><strong>IR:</strong> 11,28% efetivo</p>
+                    </div>
+                    <div class="pros-cons">
+                        <h4>✅ Prós (12)</h4>
+                        <ul>
+                            <li>Renda +137% maior</li>
+                            <li>Rentabilidade DOBRO do aluguel</li>
+                            <li>Liquidez total</li>
+                            <li>Sem inadimplência</li>
+                            <li>Atinge meta de R$ 7-10k</li>
+                        </ul>
+                        <h4>❌ Contras (8)</h4>
+                        <ul>
+                            <li>Perde patrimônio físico</li>
+                            <li>Volatilidade de mercado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box success">
+                <strong>💡 Diferença:</strong> Vender e investir gera R$ 4.696 a mais por mês (+137,6%) e R$ 31.353 a mais por ano em retorno total.
+            </div>
+        </div>
+    </section>
+
+    <!-- Recomendações -->
+    <section id="recomendacoes" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">🎯 Recomendações Finais</h2>
+            
+            <div class="card recommendation-main">
+                <h3>Estratégia Recomendada: VENDER E INVESTIR</h3>
+                <p class="lead">Com base na análise completa, a recomendação profissional é <strong>vender o imóvel e investir R$ 1 milhão</strong> na carteira diversificada.</p>
+                
+                <div class="grid-2">
+                    <div>
+                        <h4>Por que vender?</h4>
+                        <ul class="check-list">
+                            <li>✅ Renda mensal 137% maior</li>
+                            <li>✅ Rentabilidade mais que DOBRO</li>
+                            <li>✅ Atinge meta de R$ 7-10k/mês</li>
+                            <li>✅ Diversificação reduz risco</li>
+                            <li>✅ Liquidez total</li>
+                            <li>✅ Menos burocracia</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Quando manter alugado?</h4>
+                        <ul class="check-list">
+                            <li>❌ Valorização explosiva >15% a.a.</li>
+                            <li>❌ Pretende morar em 3-5 anos</li>
+                            <li>❌ Herança com valor sentimental</li>
+                            <li>❌ Conseguir R$ 10k+ de aluguel</li>
+                            <li>❌ Aversão total a investimentos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>📝 Passo a Passo</h3>
+                    <ol class="steps-list">
+                        <li><strong>Abrir conta em corretora</strong> (1-3 dias, gratuito)</li>
+                        <li><strong>Transferir recursos</strong> após venda do imóvel</li>
+                        <li><strong>Montar carteira</strong> conforme alocação recomendada (1-2 semanas)</li>
+                        <li><strong>Acompanhar mensalmente</strong> recebimento de proventos</li>
+                        <li><strong>Revisar anualmente</strong> e rebalancear se necessário</li>
+                    </ol>
+                </div>
+
+                <div class="card">
+                    <h3>⏰ Cronograma de Rendimentos</h3>
+                    <ul class="timeline">
+                        <li><strong>FIIs:</strong> Mensalmente (dia 15)</li>
+                        <li><strong>Ações:</strong> Trimestral/Semestral</li>
+                        <li><strong>Tesouro IPCA+:</strong> Fevereiro e Agosto</li>
+                        <li><strong>CDBs:</strong> Mensal ou no vencimento</li>
+                        <li><strong>Primeiro resgate:</strong> 30-45 dias</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-box info">
+                <strong>ℹ️ Próximos Passos:</strong> Baixe os arquivos CSV com todos os dados detalhados e consulte um assessor de investimentos para implementação personalizada.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre a Análise</h4>
+                    <p>Estudo completo de planejamento financeiro baseado em dados reais do mercado brasileiro (outubro 2025) e projeções do Boletim Focus do Banco Central.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Dados e Fontes</h4>
+                    <ul>
+                        <li>Boletim Focus - Banco Central</li>
+                        <li>Tesouro Direto</li>
+                        <li>B3 - Bolsa de Valores</li>
+                        <li>Receita Federal</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Downloads</h4>
+                    <p>Todos os arquivos CSV com dados detalhados estão disponíveis para download e análise.</p>
+                </div>
+            </div>
+            
+            <div class="footer-credits">
+                <div class="credits-divider"></div>
+                <p class="credits-text">
+                    <strong>Site desenvolvido por:</strong><br>
+                    <span class="credits-name">Denis Cullen</span><br>
+                    <span class="credits-detail">com ajuda do Perplexity</span><br>
+                    <span class="credits-dedication">💚 Para a Tia Marcia 💚</span>
+                </p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Análise de Investimentos. Estudo para fins educacionais e informativos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
