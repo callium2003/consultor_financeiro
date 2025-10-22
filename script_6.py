@@ -1,4 +1,9 @@
 
+from pathlib import Path
+
+DATA_DIR = Path(__file__).resolve().parent / "dados"
+DATA_DIR.mkdir(exist_ok=True)
+
 # Análise de adequação à meta e resumo final 2026-2028
 
 print("\n" + "="*100)
@@ -65,7 +70,7 @@ for cenario in ['Realista', 'Otimista', 'Pessimista']:
 df_resumo_final_2026 = pd.DataFrame(resumo_final_2026)
 print(df_resumo_final_2026.to_string(index=False))
 
-df_resumo_final_2026.to_csv('tabela_resumo_final_2026_2028.csv', index=False, encoding='utf-8-sig')
+df_resumo_final_2026.to_csv(DATA_DIR / 'tabela_resumo_final_2026_2028.csv', index=False, encoding='utf-8-sig')
 
 # Análise de melhor e pior caso
 print("\n" + "="*100)

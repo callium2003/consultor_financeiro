@@ -1,4 +1,9 @@
 
+from pathlib import Path
+
+DATA_DIR = Path(__file__).resolve().parent / "dados"
+DATA_DIR.mkdir(exist_ok=True)
+
 # RESUMO COMPARATIVO - Corrigido
 print("\n" + "="*100)
 print("RESUMO COMPARATIVO - RENDA MENSAL RESGATADA")
@@ -40,7 +45,7 @@ for _, row in df_reinvest_20.iterrows():
     })
 
 df_resumo_completo = pd.DataFrame(resumo_completo)
-df_resumo_completo.to_csv('resumo_comparativo_completo.csv', index=False, encoding='utf-8-sig')
+df_resumo_completo.to_csv(DATA_DIR / 'resumo_comparativo_completo.csv', index=False, encoding='utf-8-sig')
 
 # Tabela pivotada para melhor visualização
 print("\n### RENDA MENSAL RESGATADA POR ANO E CENÁRIO")
@@ -91,7 +96,7 @@ for cenario in ['Realista', 'Otimista', 'Pessimista']:
 df_resumo_final = pd.DataFrame(resumo_final)
 print(df_resumo_final.to_string(index=False))
 
-df_resumo_final.to_csv('tabela_resumo_final.csv', index=False, encoding='utf-8-sig')
+df_resumo_final.to_csv(DATA_DIR / 'tabela_resumo_final.csv', index=False, encoding='utf-8-sig')
 
 print("\n" + "="*100)
 print("Arquivos CSV gerados com sucesso!")

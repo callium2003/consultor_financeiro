@@ -1,9 +1,13 @@
+from pathlib import Path
+
 import pandas as pd
-import plotly.graph_objects as go
 import plotly.express as px
+import plotly.graph_objects as go
+
+DATA_DIR = Path(__file__).resolve().parent / "dados"
 
 # Load the data
-df = pd.read_csv('projecao_sem_reinvestimento.csv')
+df = pd.read_csv(DATA_DIR / 'projecao_sem_reinvestimento.csv')
 
 # Create the figure
 fig = go.Figure()

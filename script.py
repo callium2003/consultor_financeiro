@@ -1,6 +1,12 @@
 
-import pandas as pd
+from pathlib import Path
+
 import numpy as np
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "dados"
+DATA_DIR.mkdir(exist_ok=True)
 
 # CAPITAL INICIAL ATUALIZADO
 capital_inicial = 1_000_000  # R$ 1 milhão
@@ -94,9 +100,9 @@ print("\n### CENÁRIO PESSIMISTA (Inflação persistente, juros altos)")
 print(df_pessimista.to_string(index=False))
 
 # Salvando premissas
-df_realista.to_csv('premissas_cenario_realista.csv', index=False, encoding='utf-8-sig')
-df_otimista.to_csv('premissas_cenario_otimista.csv', index=False, encoding='utf-8-sig')
-df_pessimista.to_csv('premissas_cenario_pessimista.csv', index=False, encoding='utf-8-sig')
+df_realista.to_csv(DATA_DIR / 'premissas_cenario_realista.csv', index=False, encoding='utf-8-sig')
+df_otimista.to_csv(DATA_DIR / 'premissas_cenario_otimista.csv', index=False, encoding='utf-8-sig')
+df_pessimista.to_csv(DATA_DIR / 'premissas_cenario_pessimista.csv', index=False, encoding='utf-8-sig')
 
 print("\n" + "="*90)
 print("ALOCAÇÃO RECOMENDADA DA CARTEIRA")

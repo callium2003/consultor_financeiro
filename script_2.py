@@ -1,4 +1,9 @@
 
+from pathlib import Path
+
+DATA_DIR = Path(__file__).resolve().parent / "dados"
+DATA_DIR.mkdir(exist_ok=True)
+
 # PROJEÇÕES COM REINVESTIMENTO - 15% e 20%
 
 print("\n" + "="*90)
@@ -15,7 +20,7 @@ print("\n### PROJEÇÃO COM 15% DE REINVESTIMENTO")
 print(df_reinvest_15.to_string(index=False))
 
 # Salvando
-df_reinvest_15.to_csv('projecao_reinvestimento_15pct.csv', index=False, encoding='utf-8-sig')
+df_reinvest_15.to_csv(DATA_DIR / 'projecao_reinvestimento_15pct.csv', index=False, encoding='utf-8-sig')
 
 print("\n" + "="*90)
 print("PROJEÇÃO 3: COM REINVESTIMENTO DE 20% DA RENDA")
@@ -31,7 +36,7 @@ print("\n### PROJEÇÃO COM 20% DE REINVESTIMENTO")
 print(df_reinvest_20.to_string(index=False))
 
 # Salvando
-df_reinvest_20.to_csv('projecao_reinvestimento_20pct.csv', index=False, encoding='utf-8-sig')
+df_reinvest_20.to_csv(DATA_DIR / 'projecao_reinvestimento_20pct.csv', index=False, encoding='utf-8-sig')
 
 # RESUMO COMPARATIVO
 print("\n" + "="*100)
@@ -74,7 +79,7 @@ for _, row in df_reinvest_20.iterrows():
     })
 
 df_resumo_completo = pd.DataFrame(resumo_completo)
-df_resumo_completo.to_csv('resumo_comparativo_completo.csv', index=False, encoding='utf-8-sig')
+df_resumo_completo.to_csv(DATA_DIR / 'resumo_comparativo_completo.csv', index=False, encoding='utf-8-sig')
 
 # Tabela pivotada para melhor visualização
 print("\n### RENDA MENSAL RESGATADA POR ANO E CENÁRIO")

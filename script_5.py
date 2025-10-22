@@ -1,6 +1,12 @@
 
-import pandas as pd
+from pathlib import Path
+
 import numpy as np
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "dados"
+DATA_DIR.mkdir(exist_ok=True)
 
 # CAPITAL INICIAL PERMANECE R$ 1 MILHÃO
 capital_inicial = 1_000_000
@@ -151,9 +157,9 @@ print("\n### CENÁRIO PESSIMISTA (Inflação persistente, juros altos)")
 print(df_pessimista_2026.to_string(index=False))
 
 # Salvando premissas
-df_realista_2026.to_csv('premissas_2026_realista.csv', index=False, encoding='utf-8-sig')
-df_otimista_2026.to_csv('premissas_2026_otimista.csv', index=False, encoding='utf-8-sig')
-df_pessimista_2026.to_csv('premissas_2026_pessimista.csv', index=False, encoding='utf-8-sig')
+df_realista_2026.to_csv(DATA_DIR / 'premissas_2026_realista.csv', index=False, encoding='utf-8-sig')
+df_otimista_2026.to_csv(DATA_DIR / 'premissas_2026_otimista.csv', index=False, encoding='utf-8-sig')
+df_pessimista_2026.to_csv(DATA_DIR / 'premissas_2026_pessimista.csv', index=False, encoding='utf-8-sig')
 
 # GERAR TODAS AS PROJEÇÕES
 todos_resultados = []
@@ -170,7 +176,7 @@ for cenario_nome, cenario_data in [
 df_todos_resultados = pd.concat(todos_resultados, ignore_index=True)
 
 # Salvar tudo
-df_todos_resultados.to_csv('projecao_completa_2026_2028.csv', index=False, encoding='utf-8-sig')
+df_todos_resultados.to_csv(DATA_DIR / 'projecao_completa_2026_2028.csv', index=False, encoding='utf-8-sig')
 
 print("\n" + "="*100)
 print("RESUMO - RENDA MENSAL RESGATADA POR ANO, CENÁRIO E ESTRATÉGIA")

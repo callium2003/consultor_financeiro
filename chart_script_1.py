@@ -1,8 +1,12 @@
+from pathlib import Path
+
 import pandas as pd
 import plotly.graph_objects as go
 
+DATA_DIR = Path(__file__).resolve().parent / "dados"
+
 # Load the data
-df = pd.read_csv('projecao_completa_2026_2028.csv')
+df = pd.read_csv(DATA_DIR / 'projecao_completa_2026_2028.csv')
 
 # Check unique scenarios and strategies
 print("Unique Cenários:", df['Cenário'].unique())

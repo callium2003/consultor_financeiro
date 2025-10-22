@@ -22,14 +22,16 @@ Site completo e profissional contendo análise detalhada de investimentos para g
 ## 🚀 Como Usar
 
 ### Opção 1: Abrir Localmente
-1. Baixe os 3 arquivos:
+1. Baixe os 3 arquivos principais:
    - `index.html`
    - `styles.css`
    - `script.js`
 
-2. Coloque todos na mesma pasta
+2. (Opcional) Baixe também a pasta `dados/` para acessar todas as tabelas em CSV.
 
-3. Abra `index.html` no navegador
+3. Coloque tudo na mesma pasta local.
+
+4. Abra `index.html` no navegador.
 
 ### Opção 2: Hospedar Online
 Você pode hospedar gratuitamente em:
@@ -40,13 +42,25 @@ Você pode hospedar gratuitamente em:
 
 #### Passo a passo GitHub Pages:
 ```bash
-1. Crie um repositório no GitHub
-2. Faça upload dos 3 arquivos
-3. Vá em Settings > Pages
-4. Selecione branch "main" e pasta "root"
-5. Salve e aguarde alguns minutos
-6. Seu site estará em: https://seu-usuario.github.io/nome-repo
+1. Crie (ou acesse) um repositório no GitHub
+2. Adicione os arquivos `index.html`, `styles.css`, `script.js` e a pasta `dados/`
+   # Dica: use `git clone`, copie os arquivos e faça `git add . && git commit`
+3. Faça o push para a branch `main`
+4. Vá em Settings > Pages
+5. Em "Build and deployment", escolha a branch `main` e o diretório `/ (root)`
+6. Salve e aguarde a publicação
+7. Seu site ficará disponível em: https://seu-usuario.github.io/nome-repo
 ```
+
+### Checklist de Publicação no GitHub
+
+- [ ] Atualizou os textos, links e imagens no `index.html` conforme desejar?
+- [ ] Verificou se `styles.css` e `script.js` estão na raiz do repositório?
+- [ ] Confirmou que a pasta `dados/` contém os CSVs mais recentes (opcional)?
+- [ ] Executou `git status` e fez commit de todas as alterações?
+- [ ] Habilitou o GitHub Pages na branch principal?
+
+> 💡 Assim que a página for publicada, compartilhe o link com seu usuário GitHub. O site receberá atualizações automáticas sempre que novos commits forem enviados à branch configurada.
 
 ## 📁 Estrutura de Arquivos
 
@@ -56,12 +70,24 @@ analise-investimentos/
 ├── styles.css          # Estilos modernos (Flexbox/Grid)
 ├── script.js           # Interatividade (JavaScript vanilla)
 ├── README.md           # Este arquivo
-└── dados/              # (opcional) Pasta para arquivos CSV
+└── dados/              # Pasta com todas as tabelas em CSV
     ├── carteira_detalhada_com_impostos.csv
-    ├── tabela_resumo_final_2026_2028.csv
-    ├── totais_impostos_por_cenario_ano.csv
     ├── comparacao_alugar_vs_investir.csv
-    └── projecao_completa_2026_2028.csv
+    ├── impostos_detalhados_todos_cenarios.csv
+    ├── premissas_2026_otimista.csv
+    ├── premissas_2026_pessimista.csv
+    ├── premissas_2026_realista.csv
+    ├── premissas_cenario_otimista.csv
+    ├── premissas_cenario_pessimista.csv
+    ├── premissas_cenario_realista.csv
+    ├── projecao_completa_2026_2028.csv
+    ├── projecao_reinvestimento_15pct.csv
+    ├── projecao_reinvestimento_20pct.csv
+    ├── projecao_sem_reinvestimento.csv
+    ├── resumo_comparativo_completo.csv
+    ├── tabela_resumo_final.csv
+    ├── tabela_resumo_final_2026_2028.csv
+    └── totais_impostos_por_cenario_ano.csv
 ```
 
 ## 🎨 Seções do Site
@@ -132,7 +158,14 @@ analise-investimentos/
 - Scroll suave entre seções
 - Animações ao rolar a página
 - Active state na navegação
+- Simulador de investimentos com validação, mensagens acessíveis e feedback visual
 - Calculadora de comparação
+
+### SEO e Acessibilidade
+- Metadados otimizados (description, robots, Open Graph e autoria)
+- Navegação principal com aria-label, suporte a teclado e foco visível
+- Imagens com textos alternativos descritivos e carregamento otimizado (`loading="lazy"`)
+- Componentes do simulador com aria-live para anunciar resultados e mensagens de erro
 
 ### Acessibilidade
 - Semântica HTML5

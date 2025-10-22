@@ -1,6 +1,12 @@
 
-import pandas as pd
+from pathlib import Path
+
 import numpy as np
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "dados"
+DATA_DIR.mkdir(exist_ok=True)
 
 capital_inicial = 1_000_000
 
@@ -170,7 +176,7 @@ print("\n### TODAS AS PROJEÇÕES - SEM REINVESTIMENTO")
 print(df_sem_reinvest.to_string(index=False))
 
 # Salvando
-df_sem_reinvest.to_csv('projecao_sem_reinvestimento.csv', index=False, encoding='utf-8-sig')
+df_sem_reinvest.to_csv(DATA_DIR / 'projecao_sem_reinvestimento.csv', index=False, encoding='utf-8-sig')
 
 print("\n" + "="*90)
 print("RESUMO - RENDA MENSAL LÍQUIDA (SEM REINVESTIMENTO)")
